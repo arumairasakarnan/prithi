@@ -1,0 +1,190 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Fixed Navigation Bar */
+nav {
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Home Section with Full-Screen Background */
+.home {
+    background: url('img/home.jpeg')  ;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity to control darkness */
+  }
+
+
+.home-content {
+    position: relative;
+    z-index: 1;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+/* Section Containers */
+.container {
+    padding: 50px;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Destinations Grid */
+.destination {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    text-align: center;
+}
+
+.destination img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+
+/* toure package*/
+#tours{
+    background-image: url(img/nallur.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual Package Cards with Glass Effect */
+.package {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #222; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.package:hover {
+    transform: scale(1.05);
+}
+ #info img{
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+ }
+/* Contact Form */
+
+#contact {
+    background-image: url('img/con.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+/* contact-form with Glass Effect */
+.contact-form{
+    padding: 20px 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
